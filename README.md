@@ -10,11 +10,6 @@
 Usage
 -----
 
-<a href="https://raw.githubusercontent.com/bczsalba/tracer/master/assets/tracer.webp">
-  <img src="https://raw.githubusercontent.com/bczsalba/tracer/master/assets/screenshot.png"></img>
-</a>
-
-
 To use this module, simply import `trace` from it, and decorate your chosen class:
 
 ```python
@@ -27,6 +22,11 @@ class MyClass:
    
    ...
 ```
+
+<a href="https://raw.githubusercontent.com/bczsalba/tracer/master/assets/tracer.webp">
+  <img src="https://raw.githubusercontent.com/bczsalba/tracer/master/assets/screenshot.png"></img>
+</a>
+
 
 You can set custom setter and getter methods for your trace, practically allowing you to subcribe to read/write events of an attribute.
 
