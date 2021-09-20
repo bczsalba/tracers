@@ -19,11 +19,12 @@ Traceback = Any
 
 
 TEMPLATE = """
-Attribute [code green]{attribute}[/] of [code cyan]{cls!r}[/] changing to [code red]{new}[/]!
-Set by: [code blue]{filename}[/fg]:[yellow]{lineno}[/] in method [code]{funcname}[/code]
+Attribute [code 173]{attribute}[/] of [code]{obj!r}[/] changing from [code 173]\
+{current}[/] to [code 208]{new}[/]!
+Set by: [code 208]{filename}[/fg]:[173]{lineno}[/] in method [code]{funcname}[/code]
 Code: [code]{code}[/code]
-Press [bold green]Y[/] to accept changes, [bold yellow]D[/] to drop changes and\
- [bold red]Q[/] to quit."""
+Press [bold 208]Y[/] to accept changes, [bold 138]D[/] to drop changes and\
+ [bold 210]Q[/] to quit."""
 
 
 ptg.markup.alias("code", "@236 246")
@@ -74,12 +75,12 @@ def trace(
     def decorator(cls: object) -> object:
         sunder = "_" + attribute
 
-        def default_getter(_: str) -> Any:
+        def default_getter(obj: object) -> Any:
             """Get single-underscore attribute from `cls`"""
 
-            return getattr(cls, sunder)
+            return getattr(obj, sunder)
 
-        def default_setter(_: object, new: Any) -> None:
+        def default_setter(obj: object, new: Any) -> None:
             """Print current trace and offer choices with setting"""
 
             filename, lineno, funcname, code, _ = get_caller()
@@ -87,8 +88,9 @@ def trace(
             print(
                 ptg.markup.parse(
                     TEMPLATE.format(
-                        cls=cls,
+                        obj=obj,
                         attribute=attribute,
+                        current=getattr(obj, sunder),
                         new=new,
                         filename=filename,
                         funcname=funcname,

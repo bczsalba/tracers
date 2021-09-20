@@ -3,7 +3,7 @@ from random import randint
 from tracer import trace
 
 
-@trace("attr")
+@trace("test")
 class TestClass:
     """A test to showcase the tracer module"""
 
@@ -13,7 +13,7 @@ class TestClass:
         """Initialize object"""
 
         # Set attribute using dot syntax
-        self.attr = 2
+        self.test = 0
 
         # Set attribute using setattr()
         setattr(self, "attr", 1)
@@ -28,4 +28,4 @@ class TestClass:
 
 
 if __name__ == "__main__":
-    TestClass()
+    print(TestClass().attr)
