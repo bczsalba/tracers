@@ -7,7 +7,7 @@ def main() -> None:
     """Install module"""
 
     setup(
-        name="tracer",
+        name="attr-tracer",
         version="1.0.0",
         include_package_data=True,
         packages=["tracer"],
