@@ -7,8 +7,8 @@ author: bczsalba
 This module provides an easy way to interactively trace
 instance attribute changes for debugging purposes.
 
-Simply use the `trace` decorator on your chosen class and step 
-through each change while choosing between accepting changes, 
+Simply use the `trace` decorator on your chosen class and step
+through each change while choosing between accepting changes,
 dropping them or quitting altogether.
 
 Usage:
