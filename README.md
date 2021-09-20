@@ -4,6 +4,10 @@
 
 > Easily debug and trace attribute changes in your Python classes
 
+```
+pip install tracer
+```
+
 [![PyPI version](https://raw.githubusercontent.com/bczsalba/tracer/master/assets/version.svg)](https://pypi.org/project/tracer)
 [![Pylint quality](https://raw.githubusercontent.com/bczsalba/tracer/master/assets/quality.svg)](https://github.com/bczsalba/tracer/blob/master/utils/create_badge.py)
 
