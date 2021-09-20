@@ -1,4 +1,6 @@
-![Tracer](https://raw.githubusercontent.com/bczsalba/tracer/master/assets/title.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bczsalba/tracer/master/assets/title.png"></img>
+</p>
 
 > Easily debug and trace attribute changes in your Python classes
 
