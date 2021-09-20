@@ -58,9 +58,7 @@ def write_quality_badge(command: str, output_file: str) -> None:
 def write_version_badge(output_file: str) -> None:
     """Write badge for version badge"""
 
-    from pytermgui import __version__ as version
-
-    link = f"https://img.shields.io/badge/pypi_package-{version}-bright_green"
+    link = f"https://img.shields.io/badge/pypi_package-1.0.0-bright_green"
 
     with open(output_file, "wb") as output:
         data = requests.get(link).content
