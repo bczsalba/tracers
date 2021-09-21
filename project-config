@@ -30,7 +30,7 @@ todo:
 	grep -rnw . -e '# TODO'" > $VIM_PROJPATH/Makefile
 }
     
-export VIM_PROJNAME="tracer"
+export VIM_PROJNAME="tracers"
 export VIM_PROJCONF="$BASH_SOURCE"
 export VIM_PROJPATH="$(realpath `dirname $VIM_PROJCONF`)"
 # export VIM_COMMAND="python3 $VIM_PROJPATH/tests/ongoing.py"
