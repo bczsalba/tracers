@@ -7,10 +7,9 @@ def main() -> None:
     """Install module"""
 
     setup(
-        name="attr-tracer",
+        name="attr-tracers",
         version="1.0.0",
-        include_package_data=True,
-        packages=["tracer"],
+        packages=["tracers"],
         license="MIT",
         description="Easily debug and trace attribute changes in your classes",
         long_description=open("README.md").read(),

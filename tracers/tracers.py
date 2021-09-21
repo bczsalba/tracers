@@ -1,6 +1,6 @@
 """
-tracer.tracer
--------------
+tracers.tracers
+---------------
 author: bczsalba
 
 
@@ -59,7 +59,7 @@ def trace(
     """Decorator to trace changes of an attribute
 
     Usage:
-        >>> from tracer import trace
+        >>> from tracers import trace
         >>> @trace("my_attr")
         >>> class MyClass:
         >>>    my_attr = 0

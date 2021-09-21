@@ -5,7 +5,7 @@
 > Easily debug and trace attribute changes in your Python classes
 
 ```
-pip install tracer
+pip install attr-tracers
 ```
 
 [![PyPI version](https://raw.githubusercontent.com/bczsalba/tracer/master/assets/version.svg)](https://pypi.org/project/tracer)
@@ -17,7 +17,7 @@ Usage
 To use this module, simply import `trace` from it, and decorate your chosen class:
 
 ```python
-from tracer import trace
+from tracers import trace
 
 @trace("test")
 class MyClass:
@@ -36,7 +36,7 @@ You can set custom setter and getter methods for your trace, practically allowin
 
 ```python
 from typing import Any
-from tracer import trace
+from tracers import trace
 
 def handle_get(obj: object) -> Any:
     """Get variable"""

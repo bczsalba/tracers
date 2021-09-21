@@ -1,6 +1,6 @@
 """
-tracer
-------
+tracers
+-------
 author: bczsalba
 
 
@@ -12,7 +12,7 @@ through each change while choosing between accepting changes,
 dropping them or quitting altogether.
 
 Usage:
-    >>> from tracer import trace
+    >>> from tracers import trace
     >>> @trace("my_attr")
     >>> class MyClass:
     >>>    my_attr = 0
@@ -25,4 +25,4 @@ Usage:
     >>> Q
 """
 
-from .tracer import trace, get_caller
+from .tracers import trace, get_caller

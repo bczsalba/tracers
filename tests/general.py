@@ -1,6 +1,6 @@
 from random import randint
 
-from tracer import trace
+from tracers import trace
 
 
 @trace("test")
